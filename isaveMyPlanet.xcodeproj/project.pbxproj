@@ -13,9 +13,12 @@
 		811A2E1C23F2E76100950E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1B23F2E76100950E8E /* Assets.xcassets */; };
 		811A2E1F23F2E76100950E8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */; };
 		811A2E2223F2E76100950E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E2023F2E76100950E8E /* LaunchScreen.storyboard */; };
+		EA5D0492DC4453E6F2738FCA /* libPods-isaveMyPlanet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */; };
+		FABA799B23F349C300449FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABA799A23F349C300449FEC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B2C80A3A4A4EA0126421E42 /* Pods-isaveMyPlanet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isaveMyPlanet.release.xcconfig"; path = "Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet.release.xcconfig"; sourceTree = "<group>"; };
 		811A2E1223F2E75E00950E8E /* isaveMyPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isaveMyPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811A2E1523F2E75E00950E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		811A2E1723F2E75E00950E8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		811A2E2123F2E76100950E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811A2E2323F2E76100950E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isaveMyPlanet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet.debug.xcconfig"; sourceTree = "<group>"; };
+		F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isaveMyPlanet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABA799A23F349C300449FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5D0492DC4453E6F2738FCA /* libPods-isaveMyPlanet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F33BB5D0CCB148822C6D175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		811A2E0923F2E75E00950E8E = {
 			isa = PBXGroup;
 			children = (
 				811A2E1423F2E75E00950E8E /* isaveMyPlanet */,
 				811A2E1323F2E75E00950E8E /* Products */,
+				82AA3155A55E6D21091B32AD /* Pods */,
+				6F33BB5D0CCB148822C6D175 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +73,13 @@
 		811A2E1423F2E75E00950E8E /* isaveMyPlanet */ = {
 			isa = PBXGroup;
 			children = (
+				FABA799E23F34DA700449FEC /* ViewModels */,
+				FABA799D23F34D8400449FEC /* Views */,
+				FABA799C23F34D6B00449FEC /* Models */,
 				811A2E1523F2E75E00950E8E /* AppDelegate.swift */,
 				811A2E1723F2E75E00950E8E /* SceneDelegate.swift */,
 				811A2E1923F2E75E00950E8E /* ContentView.swift */,
+				FABA799A23F349C300449FEC /* GoogleService-Info.plist */,
 				811A2E1B23F2E76100950E8E /* Assets.xcassets */,
 				811A2E2023F2E76100950E8E /* LaunchScreen.storyboard */,
 				811A2E2323F2E76100950E8E /* Info.plist */,
@@ -75,6 +96,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		82AA3155A55E6D21091B32AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */,
+				3B2C80A3A4A4EA0126421E42 /* Pods-isaveMyPlanet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FABA799C23F34D6B00449FEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FABA799D23F34D8400449FEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FABA799E23F34DA700449FEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811A2E2623F2E76100950E8E /* Build configuration list for PBXNativeTarget "isaveMyPlanet" */;
 			buildPhases = (
+				4DD7BE6E5FB27CBF8D227BE7 /* [CP] Check Pods Manifest.lock */,
 				811A2E0E23F2E75E00950E8E /* Sources */,
 				811A2E0F23F2E75E00950E8E /* Frameworks */,
 				811A2E1023F2E75E00950E8E /* Resources */,
+				1E6EE4567CF225C94951B071 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +187,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A2E2223F2E76100950E8E /* LaunchScreen.storyboard in Resources */,
+				FABA799B23F349C300449FEC /* GoogleService-Info.plist in Resources */,
 				811A2E1F23F2E76100950E8E /* Preview Assets.xcassets in Resources */,
 				811A2E1C23F2E76100950E8E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E6EE4567CF225C94951B071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD7BE6E5FB27CBF8D227BE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-isaveMyPlanet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		811A2E0E23F2E75E00950E8E /* Sources */ = {
@@ -282,6 +383,7 @@
 		};
 		811A2E2723F2E76100950E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +403,7 @@
 		};
 		811A2E2823F2E76100950E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2C80A3A4A4EA0126421E42 /* Pods-isaveMyPlanet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
