@@ -13,6 +13,9 @@
 		811A2E1C23F2E76100950E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1B23F2E76100950E8E /* Assets.xcassets */; };
 		811A2E1F23F2E76100950E8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */; };
 		811A2E2223F2E76100950E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E2023F2E76100950E8E /* LaunchScreen.storyboard */; };
+		BE33887223F3EE6D007E68E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33886F23F3EE6D007E68E9 /* User.swift */; };
+		BE33887323F3EE6D007E68E9 /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887023F3EE6D007E68E9 /* event.swift */; };
+		BE33887423F3EE6D007E68E9 /* publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887123F3EE6D007E68E9 /* publication.swift */; };
 		EA5D0492DC4453E6F2738FCA /* libPods-isaveMyPlanet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */; };
 		FABA799B23F349C300449FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABA799A23F349C300449FEC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		811A2E2123F2E76100950E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811A2E2323F2E76100950E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isaveMyPlanet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet.debug.xcconfig"; sourceTree = "<group>"; };
+		BE33886F23F3EE6D007E68E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BE33887023F3EE6D007E68E9 /* event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
+		BE33887123F3EE6D007E68E9 /* publication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = publication.swift; sourceTree = "<group>"; };
 		F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isaveMyPlanet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA799A23F349C300449FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +114,9 @@
 		FABA799C23F34D6B00449FEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BE33887023F3EE6D007E68E9 /* event.swift */,
+				BE33887123F3EE6D007E68E9 /* publication.swift */,
+				BE33886F23F3EE6D007E68E9 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE33887223F3EE6D007E68E9 /* User.swift in Sources */,
 				811A2E1623F2E75E00950E8E /* AppDelegate.swift in Sources */,
 				811A2E1823F2E75E00950E8E /* SceneDelegate.swift in Sources */,
 				811A2E1A23F2E75E00950E8E /* ContentView.swift in Sources */,
+				BE33887423F3EE6D007E68E9 /* publication.swift in Sources */,
+				BE33887323F3EE6D007E68E9 /* event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
