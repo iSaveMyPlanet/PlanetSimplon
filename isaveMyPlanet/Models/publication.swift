@@ -6,6 +6,6 @@ struct publication: Decodable, Hashable, Identifiable {
     var title: String
     var content: String
     var likes: Int
-    var date: date
+    var date: String //date
     var image: String
 }

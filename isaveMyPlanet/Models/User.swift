@@ -4,6 +4,6 @@ import SwiftUI
 struct User: Decodable, Hashable, Identifiable {
     var id: String
     var name: String
-    var mail: mail
-    var password: String
+    var mail: String?
+    var password: String?
 }

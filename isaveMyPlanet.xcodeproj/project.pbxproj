@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		811A2E1623F2E75E00950E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E1523F2E75E00950E8E /* AppDelegate.swift */; };
 		811A2E1823F2E75E00950E8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E1723F2E75E00950E8E /* SceneDelegate.swift */; };
-		811A2E1A23F2E75E00950E8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E1923F2E75E00950E8E /* ContentView.swift */; };
+		811A2E1A23F2E75E00950E8E /* AuthentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E1923F2E75E00950E8E /* AuthentificationView.swift */; };
 		811A2E1C23F2E76100950E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1B23F2E76100950E8E /* Assets.xcassets */; };
 		811A2E1F23F2E76100950E8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */; };
 		811A2E2223F2E76100950E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A2E2023F2E76100950E8E /* LaunchScreen.storyboard */; };
+		811A2E3323F3FEA500950E8E /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3223F3FEA500950E8E /* SessionStore.swift */; };
+		811A2E3523F442C200950E8E /* FilActualitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3423F442C200950E8E /* FilActualitesView.swift */; };
 		BE33887223F3EE6D007E68E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33886F23F3EE6D007E68E9 /* User.swift */; };
 		BE33887323F3EE6D007E68E9 /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887023F3EE6D007E68E9 /* event.swift */; };
 		BE33887423F3EE6D007E68E9 /* publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887123F3EE6D007E68E9 /* publication.swift */; };
@@ -25,11 +27,13 @@
 		811A2E1223F2E75E00950E8E /* isaveMyPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isaveMyPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811A2E1523F2E75E00950E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		811A2E1723F2E75E00950E8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		811A2E1923F2E75E00950E8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		811A2E1923F2E75E00950E8E /* AuthentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationView.swift; sourceTree = "<group>"; };
 		811A2E1B23F2E76100950E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		811A2E2123F2E76100950E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811A2E2323F2E76100950E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A2E3223F3FEA500950E8E /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		811A2E3423F442C200950E8E /* FilActualitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilActualitesView.swift; sourceTree = "<group>"; };
 		B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isaveMyPlanet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet.debug.xcconfig"; sourceTree = "<group>"; };
 		BE33886F23F3EE6D007E68E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE33887023F3EE6D007E68E9 /* event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
@@ -79,12 +83,12 @@
 		811A2E1423F2E75E00950E8E /* isaveMyPlanet */ = {
 			isa = PBXGroup;
 			children = (
+				811A2E3123F3FE7300950E8E /* Services */,
 				FABA799E23F34DA700449FEC /* ViewModels */,
 				FABA799D23F34D8400449FEC /* Views */,
 				FABA799C23F34D6B00449FEC /* Models */,
 				811A2E1523F2E75E00950E8E /* AppDelegate.swift */,
 				811A2E1723F2E75E00950E8E /* SceneDelegate.swift */,
-				811A2E1923F2E75E00950E8E /* ContentView.swift */,
 				FABA799A23F349C300449FEC /* GoogleService-Info.plist */,
 				811A2E1B23F2E76100950E8E /* Assets.xcassets */,
 				811A2E2023F2E76100950E8E /* LaunchScreen.storyboard */,
@@ -100,6 +104,14 @@
 				811A2E1E23F2E76100950E8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		811A2E3123F3FE7300950E8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				811A2E3223F3FEA500950E8E /* SessionStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		82AA3155A55E6D21091B32AD /* Pods */ = {
@@ -124,6 +136,8 @@
 		FABA799D23F34D8400449FEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				811A2E1923F2E75E00950E8E /* AuthentificationView.swift */,
+				811A2E3423F442C200950E8E /* FilActualitesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,20 +225,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4DD7BE6E5FB27CBF8D227BE7 /* [CP] Check Pods Manifest.lock */ = {
@@ -257,11 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE33887223F3EE6D007E68E9 /* User.swift in Sources */,
+				811A2E3323F3FEA500950E8E /* SessionStore.swift in Sources */,
 				811A2E1623F2E75E00950E8E /* AppDelegate.swift in Sources */,
 				811A2E1823F2E75E00950E8E /* SceneDelegate.swift in Sources */,
-				811A2E1A23F2E75E00950E8E /* ContentView.swift in Sources */,
+				811A2E1A23F2E75E00950E8E /* AuthentificationView.swift in Sources */,
 				BE33887423F3EE6D007E68E9 /* publication.swift in Sources */,
 				BE33887323F3EE6D007E68E9 /* event.swift in Sources */,
+				811A2E3523F442C200950E8E /* FilActualitesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
