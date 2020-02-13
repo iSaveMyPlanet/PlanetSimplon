@@ -2,20 +2,20 @@
 //  FilActualitesView.swift
 //  isaveMyPlanet
 //
-//  Created by randaTrimech  on 12/02/2020.
+//  Created by randaTrimech  on 13/02/2020.
 //  Copyright © 2020 randaTrimech . All rights reserved.
 //
 
 import SwiftUI
 
-struct FilActualitesView: View {
+struct FilActualiteesView: View {
     var body: some View {
-        Text("Hello, World!")
+        ActualityView()
     }
 }
 
-struct FilActualitesView_Previews: PreviewProvider {
+struct FilActualiteesView_Previews: PreviewProvider {
     static var previews: some View {
-        FilActualitesView()
+        FilActualiteesView()
     }
 }

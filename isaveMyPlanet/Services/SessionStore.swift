@@ -11,29 +11,12 @@ import SwiftUI
 import Firebase
 import Combine
 
-class SessionStore : ObservableObject {
-    var didChange = PassthroughSubject<SessionStore, Never>()
+class SessionStore  {
     
-    var session: User? { didSet { self.didChange.send(self) }}
     var handle: AuthStateDidChangeListenerHandle?
     var ref: DatabaseReference = Database.database().reference()
 
-    func listen () {
-        // monitor authentication changes using firebase
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if let user = user {
-                // if we have a user, create a new user model
-                print("Got user: \(user)")
-                self.session = User(
-                    id: user.uid,
-                    name: user.displayName!
-                )
-            } else {
-                // if we don't have a user, set our session to nil
-                self.session = nil
-            }
-        }
-    }
+    
 
     
     func createUser(
@@ -43,9 +26,7 @@ class SessionStore : ObservableObject {
         handler: @escaping AuthDataResultCallback
         ) {
         Auth.auth().createUser(withEmail: email, password: password, completion: handler)
-        //self.ref.child("users/\(user.uid)/pseudo").setValue(pseudo)
-
-    }
+}
 
     func logIn(
         email: String,
@@ -58,7 +39,6 @@ class SessionStore : ObservableObject {
     func signOut () -> Bool {
         do {
             try Auth.auth().signOut()
-            self.session = nil
             return true
         } catch {
             return false

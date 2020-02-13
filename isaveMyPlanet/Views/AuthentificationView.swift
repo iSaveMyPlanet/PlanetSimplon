@@ -20,28 +20,12 @@ struct ContentView: View {
     @State var showDashboardinscri = false
     @State private var showAlert = false
     
-    @ObservedObject var session: SessionStore = SessionStore()
-    var alert: Alert {
-        Alert(title: Text("iOScreator"), message: Text("Hello SwiftUI"), dismissButton: .default(Text("Dismiss")))
-    }
+     var session: SessionStore = SessionStore()
+   var alert: Alert {
+          Alert(title: Text("iOScreator"), message: Text("Hello SwiftUI"), dismissButton: .default(Text("Dismiss")))
+      }
     
     
-    func createUser () {
-        loading = true
-        error = false
-        session.createUser(email: email, password: password , pseudo :pseudo ) { (result, error) in
-            self.loading = false
-            if error != nil {
-                self.error = true
-            }
-            else {
-                self.email = ""
-                self.password = ""
-                self.showDashboard = true
-                
-            }
-        }
-    }
     
     
     var body: some View {
@@ -59,21 +43,19 @@ struct ContentView: View {
                         .padding(30).frame( height: 30, alignment: .center)
                     
                     VStack {
-                        NavigationLink(destination:  FilActualitesView() , isActive: $showDashboard ) {
+                        NavigationLink(destination:  TabBarView() , isActive: $showDashboard ) {
                             Text("")
-                        }.navigationBarBackButtonHidden(true)
+                        }
                         Button(action: {
                             if self.email.isEmpty || self.password.isEmpty {
-                                //self.isAlert = true
                                 print("vide")
-                            }
-                            else {
-                                self.session.logIn(email: self.email, password: self.password) { (result, error) in
-                                    self.loading = false
-                                    if error != nil {
-                                        self.error = true
-                                        self.showAlert = true
-                                        Alert(title: Text("Second Alert"), message: Text("This is the second alert"))
+                                }
+                                else {
+                                    self.session.logIn(email: self.email, password: self.password) { (result, error) in
+                                        self.loading = false
+                                        if error != nil {
+                                            self.error = true
+                                            self.showAlert = true
                                         
                                     }
                                         
@@ -88,7 +70,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                //Spacer().frame( height: CGFloat(50))
                 
                 
                 /// Fields of inscription
@@ -106,12 +87,11 @@ struct ContentView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(30).frame( height: 30, alignment: .center)
                     VStack {
-                        NavigationLink(destination:  FilActualitesView() , isActive: $showDashboardinscri ) {
+                        NavigationLink(destination:  TabBarView() , isActive: $showDashboardinscri ) {
                             Text("")
-                        }.navigationBarBackButtonHidden(true)
+                        }
                         Button(action: {
                             if self.emailInscri.isEmpty || self.passwordInscri.isEmpty {
-                                //self.isAlert = true
                                 print("vide")
                             }
                             else {
