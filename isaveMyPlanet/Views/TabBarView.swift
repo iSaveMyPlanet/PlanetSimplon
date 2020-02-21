@@ -1,14 +1,6 @@
-//
-//  FilActualitesView.swift
-//  isaveMyPlanet
-//
-//  Created by randaTrimech  on 12/02/2020.
-//  Copyright © 2020 randaTrimech . All rights reserved.
-//
-
 import SwiftUI
 
-struct TabBarView: View {
+struct ContentView: View {
     var body: some View {
      // Text("on test")
        Tabs()
@@ -17,37 +9,52 @@ struct TabBarView: View {
 struct Tabs: View {
 
     @State private var selected = 0
-
+   init() {
+    UITabBar.appearance().barTintColor = .systemGreen
+    UITabBar.appearance().unselectedItemTintColor = UIColor.white
+      }
     var body: some View {
         TabView(selection: $selected) {
-            
+
             FilActualiteesView().tabItem {
-                Image(systemName: (selected == 1 ? "book" : "book"))
+                Image(systemName: "book")
+                Text("Actualités")
             }.tag(0)
-            MapView()
+            ListEventView().navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
                 .tabItem {
-                    Image(systemName: (selected == 1 ? "location" : "location"))
+                    Image(systemName: "mappin.circle")
+                    Text("Evénement")
+
                 }.tag(1)
+            MapView().navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+                .tabItem {
+                    Image(systemName: "location")
+                    Text("Carte")
+            }.tag(2)
             FavorisView()
             .tabItem {
-                 Image(systemName: (selected == 1 ? "star.fill" : "star.fill"))
-            }.tag(2)
+                 Image(systemName:  "star.fill")
+                Text("Favoris")
+
+            }.tag(3)
+
             QuizzView()
             .tabItem {
-               Image(systemName: (selected == 1 ? "gamecontroller" : "gamecontroller"))
-            }.tag(3)
-            
-            ProfilView()
-            .tabItem {
-                Image(systemName: (selected == 1 ? "person" : "person"))
+               Image(systemName: "gamecontroller")
+                Text("Quizz")
+
             }.tag(4)
-            
-          
-        }
+
+
+        }.accentColor(.blue)
+
     }
 }
-struct TabBarView_Previews: PreviewProvider {
+
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        ContentView()
     }
 }

@@ -8,4 +8,5 @@ struct publication: Decodable, Hashable, Identifiable {
     var likes: Int
     var date: String //date
     var image: String
+    var starselected: Bool
 }

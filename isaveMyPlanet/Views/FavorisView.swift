@@ -8,14 +8,33 @@
 
 import SwiftUI
 
+
 struct FavorisView: View {
+    @State private var selectorIndex = 0
+    @State private var numbers = ["Articles","Evénements"]
     var body: some View {
-        Text("hello Favoris")
+        VStack {
+
+            HStack{
+                Picker("Numbers", selection: $selectorIndex) {
+                    ForEach(0 ..< numbers.count) { index in
+                        Text(self.numbers[index]).tag(index)
+                    }
+                }
+
+            }
+            .pickerStyle(SegmentedPickerStyle())
+
+
+            if (selectorIndex == 0) {
+                ActualityView()
+            } else {
+                EventView()
+            }
+            Spacer()
+
+        }.navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
     }
 }
 
-struct FavorisView_Previews: PreviewProvider {
-    static var previews: some View {
-        FavorisView()
-    }
-}

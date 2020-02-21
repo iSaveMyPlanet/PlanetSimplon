@@ -18,12 +18,16 @@
 		811A2E3723F55C1D00950E8E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3623F55C1D00950E8E /* MapView.swift */; };
 		811A2E3923F57EE300950E8E /* FavorisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3823F57EE300950E8E /* FavorisView.swift */; };
 		811A2E3B23F57EF800950E8E /* QuizzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3A23F57EF800950E8E /* QuizzView.swift */; };
-		811A2E3D23F57F2500950E8E /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3C23F57F2500950E8E /* ProfilView.swift */; };
+		811A2E3D23F57F2500950E8E /* listEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3C23F57F2500950E8E /* listEventView.swift */; };
 		811A2E3F23F585F000950E8E /* FilActualiteesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E3E23F585F000950E8E /* FilActualiteesView.swift */; };
 		811A2E4123F589E000950E8E /* ActualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A2E4023F589E000950E8E /* ActualityView.swift */; };
+		BE21E96023FD44E700F9BDD7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE21E95F23FD44E600F9BDD7 /* TextField.swift */; };
 		BE33887223F3EE6D007E68E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33886F23F3EE6D007E68E9 /* User.swift */; };
 		BE33887323F3EE6D007E68E9 /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887023F3EE6D007E68E9 /* event.swift */; };
 		BE33887423F3EE6D007E68E9 /* publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE33887123F3EE6D007E68E9 /* publication.swift */; };
+		BE471B0E23FAA42700267CB6 /* Checkpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE471B0D23FAA42700267CB6 /* Checkpoint.swift */; };
+		BE471B1023FAAA7E00267CB6 /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE471B0F23FAAA7D00267CB6 /* searchBar.swift */; };
+		BE6B766323FBEC7C0019354D /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6B766223FBEC7C0019354D /* EventView.swift */; };
 		EA5D0492DC4453E6F2738FCA /* libPods-isaveMyPlanet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */; };
 		FABA799B23F349C300449FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABA799A23F349C300449FEC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -43,13 +47,17 @@
 		811A2E3623F55C1D00950E8E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		811A2E3823F57EE300950E8E /* FavorisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorisView.swift; sourceTree = "<group>"; };
 		811A2E3A23F57EF800950E8E /* QuizzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzView.swift; sourceTree = "<group>"; };
-		811A2E3C23F57F2500950E8E /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		811A2E3C23F57F2500950E8E /* listEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listEventView.swift; sourceTree = "<group>"; };
 		811A2E3E23F585F000950E8E /* FilActualiteesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilActualiteesView.swift; sourceTree = "<group>"; };
 		811A2E4023F589E000950E8E /* ActualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualityView.swift; sourceTree = "<group>"; };
 		B90CB12CFA9836DD1F0BF0DB /* Pods-isaveMyPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isaveMyPlanet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isaveMyPlanet/Pods-isaveMyPlanet.debug.xcconfig"; sourceTree = "<group>"; };
+		BE21E95F23FD44E600F9BDD7 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		BE33886F23F3EE6D007E68E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE33887023F3EE6D007E68E9 /* event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
 		BE33887123F3EE6D007E68E9 /* publication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = publication.swift; sourceTree = "<group>"; };
+		BE471B0D23FAA42700267CB6 /* Checkpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkpoint.swift; sourceTree = "<group>"; };
+		BE471B0F23FAAA7D00267CB6 /* searchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
+		BE6B766223FBEC7C0019354D /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F7073EBBC482BC8DA36C2A00 /* libPods-isaveMyPlanet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-isaveMyPlanet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA799A23F349C300449FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BE33887023F3EE6D007E68E9 /* event.swift */,
+				BE21E95F23FD44E600F9BDD7 /* TextField.swift */,
 				BE33887123F3EE6D007E68E9 /* publication.swift */,
 				BE33886F23F3EE6D007E68E9 /* User.swift */,
 			);
@@ -149,11 +158,14 @@
 			isa = PBXGroup;
 			children = (
 				811A2E1923F2E75E00950E8E /* AuthentificationView.swift */,
+				BE471B0F23FAAA7D00267CB6 /* searchBar.swift */,
 				811A2E3423F442C200950E8E /* TabBarView.swift */,
+				BE471B0D23FAA42700267CB6 /* Checkpoint.swift */,
 				811A2E3623F55C1D00950E8E /* MapView.swift */,
 				811A2E3823F57EE300950E8E /* FavorisView.swift */,
 				811A2E3A23F57EF800950E8E /* QuizzView.swift */,
-				811A2E3C23F57F2500950E8E /* ProfilView.swift */,
+				BE6B766223FBEC7C0019354D /* EventView.swift */,
+				811A2E3C23F57F2500950E8E /* listEventView.swift */,
 				811A2E3E23F585F000950E8E /* FilActualiteesView.swift */,
 				811A2E4023F589E000950E8E /* ActualityView.swift */,
 			);
@@ -286,8 +298,12 @@
 				BE33887223F3EE6D007E68E9 /* User.swift in Sources */,
 				811A2E4123F589E000950E8E /* ActualityView.swift in Sources */,
 				811A2E3B23F57EF800950E8E /* QuizzView.swift in Sources */,
-				811A2E3D23F57F2500950E8E /* ProfilView.swift in Sources */,
+				BE21E96023FD44E700F9BDD7 /* TextField.swift in Sources */,
+				BE6B766323FBEC7C0019354D /* EventView.swift in Sources */,
+				811A2E3D23F57F2500950E8E /* listEventView.swift in Sources */,
 				811A2E3323F3FEA500950E8E /* SessionStore.swift in Sources */,
+				BE471B1023FAAA7E00267CB6 /* searchBar.swift in Sources */,
+				BE471B0E23FAA42700267CB6 /* Checkpoint.swift in Sources */,
 				811A2E1623F2E75E00950E8E /* AppDelegate.swift in Sources */,
 				811A2E1823F2E75E00950E8E /* SceneDelegate.swift in Sources */,
 				811A2E1A23F2E75E00950E8E /* AuthentificationView.swift in Sources */,
@@ -435,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"isaveMyPlanet/Preview Content\"";
+				DEVELOPMENT_TEAM = NF47JV4WRY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = isaveMyPlanet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = randaTrimech.isaveMyPlanet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"isaveMyPlanet/Preview Content\"";
+				DEVELOPMENT_TEAM = NF47JV4WRY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = isaveMyPlanet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = randaTrimech.isaveMyPlanet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

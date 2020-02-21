@@ -14,8 +14,3 @@ struct FilActualiteesView: View {
     }
 }
 
-struct FilActualiteesView_Previews: PreviewProvider {
-    static var previews: some View {
-        FilActualiteesView()
-    }
-}
